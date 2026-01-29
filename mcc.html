@@ -2,125 +2,225 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Mobile Communications and Coding Lab - HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Communications and Coding Lab</title>
   </head>
 
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 50px 30px;
+      text-align: center;
+    }
+
+    h1#mcc {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .director-section {
+      padding: 40px 30px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+
+    h2#meb {
+      font-size: 32px;
+      color: #667eea;
+      margin-bottom: 20px;
+    }
+
+    .director-info {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .director-text {
+      flex: 1;
+    }
+
+    p#office {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .director-image {
+      flex: 0 0 250px;
+    }
+
+    .director-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #research {
+      background-color: #f8f9ff;
+      border: none;
+      padding: 20px !important;
+      border-radius: 10px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+      margin-top: 20px;
+    }
+
+    .members-section {
+      padding: 40px 30px;
+    }
+
+    h3#info {
+      font-size: 28px;
+      color: #667eea;
+      margin-bottom: 20px;
+    }
+
+    #members {
+      background-color: #f8f9ff;
+      border: none;
+      padding: 25px !important;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    #members p {
+      margin-bottom: 20px;
+    }
+
+    .course-title {
+      font-weight: 600;
+      color: #667eea;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+
+    .course-title:first-child {
+      margin-top: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      padding: 8px 0;
+      color: #333;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    ul li:last-child {
+      border-bottom: none;
+    }
+
+    ul li::before {
+      content: "→ ";
+      color: #667eea;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    footer {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .director-info {
+        flex-direction: column;
+      }
+
+      .director-image {
+        flex: 1;
+      }
 
       h1#mcc {
-        border: 5px solid gray;
-        font-family: Georgia;
-        font-style: italic;
-        font-size: 60px;
-        padding: 20px;
-        width: 700px;
-        margin:50px;
-        color:gray;
-        letter-spacing:2px;
-        text-align: center;
+        font-size: 36px;
       }
-
-      h2#meb {
-        border: 20px ;
-        font-family: Georgia;
-        font-size: 40px;
-        padding: 20px;
-        width: 700px;
-        margin:10px;
-        color:gray;
-        letter-spacing:2px;
-        text-align: center;
-      }
-
-      h3#info {
-        border: 20px ;
-        font-family: Georgia;
-        font-size: 30px;
-        padding: 20px;
-        width: 700px;
-        margin:10px;
-        color:gray;
-        letter-spacing:2px;
-        text-align: center;
-      }
-
-      p#office{
-        font-family:Times;
-        font-size: 20px;
-        color: black;
-        line-height:1.6;
-      }
-
-      div{
-        border: 2px solid gray;
-        background-color: lightblue;
-      }
-
-      div#research{
-        padding-left: 20px;
-        font-size:25px;
-      }
-
-      div#members{
-        padding-left: 20px;
-        font-size:25px;
-      }
-
-      ul  {
-        list-style: square;
-        font-size:20px;
-        color: black;
-        line-height:1.6;
-      }
-
+    }
   </style>
-  <body>
-    <h1 id="mcc">Mobile Communications and Coding Lab</h1>
-    <h2>Director: Porf. Young Joon Song</h2>
-    <p id="office">
-      D-550, Mobile Communications and Coding Lab., <br>
-      Dept. of EE, Kumoh National Institute of Technology, <br>
-      61 Daehak-ro, Gumi, Gyeongbuk, 39177, South Korea <br>
-      e-mail: yjsong@kumoh.ac.kr <br>
-      Office: +82-54-478-7486
-    </p>
-    <img src="Song.jpg" width="30%" height="30%">
 
-    <div id="research">
-      <p> His research interests include AI (Artificial Intelligence), mobile communication systems such as 5G and beyond and channel coding theory and their implementations. <br>
-        He is also interested in machine learing and deep learning algorithms and their applicaitons to autonomous driving and public safety system realization.
-      </p>
-    </div>
-    <br>
-    <br>
-    <h2 id="meb">Members</h2>
-      <div id="members">
-        <p>
-          Ph.D course:
-          <ul>
-            <li> Jingon Kim </li>            
-          </ul>
-          Master Course:
-          <ul>
-            <li> Joon Sik Lee </li>
-            <li> Sang Gun Park </li>
-            <li> Sung Oh Lim </li>
-            <li> Chang Hyun Kim </li>
-          </ul>
-        </p>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 id="mcc">Mobile Communications and Coding Lab</h1>
       </div>
 
-      <br>
-      <br>
-    <h3 id="info"> useful sites for paper preparation</h3>
-    <ul>
-      <li>    <a href="https://www.overleaf.com/learn">Latex Overleaf Help documents</a>
-        Most of Latex problems can be solved here!! </li>
-      <li>  <a href="http://t-robotics.blogspot.com/2016/02/latex.html#.XCB3UVwzZEY">Latex first step</a> </li>
-      <li>  <a href="https://www.thestudentroom.co.uk/help/latex">Latex basic mathematical expressions</a> </li>
-      <li>  <a href="https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols">Latex symbos</a> </li>
-      <li>  <a href="http://w2.syronex.com/jmr/tex/texsym.old.html">Latex selected symbols</a> </li>
-      <li>  <a href="https://www.overleaf.com/learn/latex/Questions/How_to_include_a_bibliography_using_bibtex">Latex references</a> </li>
-  </ul>
+      <div class="director-section">
+        <h2 id="meb">Director</h2>
+        <div class="director-info">
+          <div class="director-text">
+            <h3 style="color: #667eea; margin-bottom: 15px;">Prof. Young Joon Song</h3>
+            <p id="office">
+              D-550, Mobile Communications and Coding Lab.<br>
+              Dept. of EE, Kumoh National Institute of Technology<br>
+              61 Daehak-ro, Gumi, Gyeongbuk, 39177, South Korea<br><br>
+              <strong>E-mail:</strong> yjsong@kumoh.ac.kr<br>
+              <strong>Office:</strong> +82-54-478-7486
+            </p>
+            <div id="research">
+              <p>His research interests include AI (Artificial Intelligence), mobile communication systems such as 5G and beyond, and channel coding theory with their implementations. He is also interested in machine learning and deep learning algorithms and their applications to autonomous driving and public safety system realization.</p>
+            </div>
+          </div>
+          <div class="director-image">
+            <img src="Song.jpg" alt="Prof. Young Joon Song">
+          </div>
+        </div>
+      </div>
+
+      <div class="members-section">
+        <h2 id="meb">Members</h2>
+        <div id="members">
+          <div class="course-title">Ph.D Course:</div>
+          <ul>
+            <li>Jingon Kim</li>
+          </ul>
+
+          <div class="course-title">Master Course:</div>
+          <ul>
+            <li>Joon Sik Lee</li>
+            <li>Sang Gun Park</li>
+            <li>Sung Oh Lim</li>
+            <li>Chang Hyun Kim</li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; 2026 Mobile Communications and Coding Lab. All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
