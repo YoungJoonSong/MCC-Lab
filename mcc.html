@@ -1,4 +1,4 @@
-S<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -37,9 +37,10 @@ S<!DOCTYPE html>
     }
 
     h1#mcc {
-      font-size: 48px;
+      font-size: clamp(26px, 4.5vw, 42px);
       font-weight: 700;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
+      line-height: 1.3;
       margin-bottom: 10px;
     }
 
@@ -80,6 +81,52 @@ S<!DOCTYPE html>
       height: auto;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .cv-section {
+      margin-top: 30px;
+      padding: 25px;
+      background-color: #f8f9ff;
+      border-radius: 10px;
+      border: 1px solid #e8eaff;
+    }
+
+    .cv-section h4 {
+      font-size: 20px;
+      color: #667eea;
+      margin-bottom: 15px;
+      margin-top: 25px;
+    }
+
+    .cv-section h4:first-child {
+      margin-top: 0;
+    }
+
+    .cv-section ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .cv-section li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    .cv-item {
+      margin-bottom: 12px;
+      padding-left: 15px;
+      border-left: 3px solid #667eea;
+    }
+
+    .cv-item-title {
+      font-weight: 600;
+      color: #333;
+    }
+
+    .cv-item-detail {
+      color: #555;
+      font-size: 15px;
+      margin-top: 4px;
     }
 
     #research {
@@ -167,7 +214,7 @@ S<!DOCTYPE html>
       }
 
       h1#mcc {
-        font-size: 36px;
+        font-size: clamp(24px, 6vw, 32px);
       }
     }
   </style>
@@ -197,6 +244,134 @@ S<!DOCTYPE html>
           <div class="director-image">
             <img src="송영준증명사진.jpg" alt="Prof. Young Joon Song">
           </div>
+        </div>
+        <div class="cv-section">
+          <h4>경력 이력 (Curriculum Vitae)</h4>
+
+          <h4>학력 (Education)</h4>
+          <div class="cv-item">
+            <div class="cv-item-title">Ph.D. in Electronic Communication Engineering</div>
+            <div class="cv-item-detail">[Hanyang University], [1999]</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">M.S. in Electronic Communication Engineering</div>
+            <div class="cv-item-detail">[Hanyang University], [1994]</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">B.S. in Electronic Communication Engineering</div>
+            <div class="cv-item-detail">[Hanyang University], [1987]</div>
+          </div>
+
+          <h4>경력 (Employment)</h4>
+          <div class="cv-item">
+            <div class="cv-item-title">Professor</div>
+            <div class="cv-item-detail">Dept. of EE, Kumoh National Institute of Technology (2002–Present)</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Principal Researcher</div>
+            <div class="cv-item-detail">LG Electronics (1994–2002)</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Researcher</div>
+            <div class="cv-item-detail">LG Electronics (1988–1992)</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Researcher</div>
+            <div class="cv-item-detail">Samsung Electronics (1987–1988)</div>
+          </div>
+          <h4>연구 분야 (Research Interests)</h4>
+          <ul>
+            <li>5G/Beyond 5G 이동통신 시스템</li>
+            <li>채널 부호화 이론 및 구현</li>
+            <li>인공지능 및 머신러닝</li>
+            <li>공공안전 시스템</li>
+          </ul>
+
+          <h4>대표 수행과제 (Representative Research Projects)</h4>
+          <p style="color: #555; font-size: 14px; margin-bottom: 15px;">AI(딥러닝, 머신러닝), 국방, 위성통신 분야 과제 수행</p>
+          <div class="cv-item">
+            <div class="cv-item-title">전투능력 향상을 위한 국방 IoT 핵심기술 개발</div>
+            <div class="cv-item-detail">연구재단 (2015~2017)</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">전술통신환경에서의 다양한 종류의 디코딩분석 연구</div>
+            <div class="cv-item-detail">국방과학연구소 (2012~2014)</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">위성 DAB 기술 동향분석 및 시스템 성능분석</div>
+            <div class="cv-item-detail">한국전자통신연구원 (2003)</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">중소형 OLED 특성 평가 및 Panel 얼룩 (Mura) 보상 시스템</div>
+            <div class="cv-item-detail">한국산업단지공단 (2017~2018)</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">차세대 이동수단 편의성 및 안정성 개선 기술</div>
+            <div class="cv-item-detail">한국연구재단 (2018~2020)</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">짧은 길이의 블록 부호를 위한 통합 머신러닝 기법</div>
+            <div class="cv-item-detail">한국연구재단 (2021~2024)</div>
+          </div>
+
+          <h4>주요 논문 (Selected Publications)</h4>
+          <p style="color: #555; font-size: 14px; margin-bottom: 15px;">AI(딥러닝, 머신러닝), 이동통신 분야 논문</p>
+          <div class="cv-item">
+            <div class="cv-item-title">New Golay decoding method using auto-encoder and OSD</div>
+            <div class="cv-item-detail">Hyun Woo Cho and Young Joon Song, ICT Express, Vol. 10, Issue 2, pp. 393-399, Apr. 2024</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">YOLO v5를 이용한 U-Net3+모델 기반 Semantic-Segmentation 성능 개선</div>
+            <div class="cv-item-detail">조국한, 송영준, 한국정보기술학회논문지, 제22권 12호, pp. 1-8, 2024년 12월</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">CNN을 활용한 OLED 디스플레이 결함 검출 시스템 구현</div>
+            <div class="cv-item-detail">조국한, 허영욱, 조현우, 송영준, 한국정보기술학회논문지, 제20권 6호, pp. 1-8, 2022년 6월</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Synchronization circuit with sidelobe cancellation</div>
+            <div class="cv-item-detail">Young Joon Song and In-Sik Kang, IEICE Electronic Express, Vol. 8, No. 19, pp. 1583-1589, Oct. 2011</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Frame Synchronization Word in W-CDMA System</div>
+            <div class="cv-item-detail">Young Joon Song, IEEE Comm. Letters, Vol. 7, No. 11, pp. 520-522, Nov. 2003</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Frame Synchronization Confirmation Technique Using Pilot Pattern</div>
+            <div class="cv-item-detail">Young Joon Song, JCN (Journal of Communications and Networks), Vol. 2, No. 1, pp. 69-75, Mar. 2000</div>
+          </div>
+
+          <h4>대표 특허 (Representative Patents)</h4>
+          <p style="color: #555; font-size: 14px; margin-bottom: 15px;">AI(딥러닝, 머신러닝), 이동통신 분야 특허</p>
+          <div class="cv-item">
+            <div class="cv-item-title">Pilot signals for synchronization and/or channel estimation</div>
+            <div class="cv-item-detail">Young Joon Song, UK patent, GB2350037, Sep. 19, 2001</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Pilot signals for frame synchronization</div>
+            <div class="cv-item-detail">Young Joon Song, UK patent, GB2350760, Feb. 06, 2002</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Method for coding transmitting transport format combination indicator</div>
+            <div class="cv-item-detail">Young Joon Song, US patent, US6,813,506B1, Nov. 2, 2004</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Pilot signals for synchronization and/or channel estimation</div>
+            <div class="cv-item-detail">Young Joon Song, US patent, US7,317,749B2, Jan. 8, 2008</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">Method for cooperating between smart devices and cloud server thereof</div>
+            <div class="cv-item-detail">Young Joon Song, US patent, US9,848,404B2, Dec. 19, 2017</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">이동통신 시스템 환경에서의 OSD와 오토 인코더를 이용한 블록 부호의 복호 장치</div>
+            <div class="cv-item-detail">송영준, 조현우, 대한민국특허, 등록번호 10-2761244, 2025년 1월 23일</div>
+          </div>
+          <div class="cv-item">
+            <div class="cv-item-title">제어 비트를 갖는 오토 디코더를 사용한 채널 디코딩 방법</div>
+            <div class="cv-item-detail">송영준, 조현우, 대한민국특허, 등록번호 10-2349814, 2022년 1월 6일</div>
+          </div>
+
         </div>
       </div>
 
